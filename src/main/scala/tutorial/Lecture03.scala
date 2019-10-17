@@ -19,7 +19,7 @@ object Lecture03 {
       .connect(r, nor1Input1)
       .connect(nor2Output, nor1Input2)
       .connect(s, nor2Input1)
-      .connect(nor1Output, nor1Input2)
+      .connect(nor1Output, nor2Input2)
       .connect(nor1Output, q)
       .connect(nor2Output, nq)
       .build

@@ -31,7 +31,8 @@ object Lecture02 extends App {
 
 
     def addNorGate(): (CircuitBuilder[Graph, Node], ((Node, Node), Node)) = {
-      /* TODO: implement adding a nor gate. */
+      /* TODO: implement adding a nor gate.
+          Add the gate as a single node and use this node for all the connection pins of the result. */
       ???
     }
 
@@ -57,7 +58,7 @@ object Lecture02 extends App {
     .connect(r, nor1Input1)
     .connect(nor2Output, nor1Input2)
     .connect(s, nor2Input1)
-    .connect(nor1Output, nor1Input2)
+    .connect(nor1Output, nor2Input2)
     .connect(nor1Output, q)
     .connect(nor2Output, nq)
     .build
